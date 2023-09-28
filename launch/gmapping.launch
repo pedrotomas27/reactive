@@ -1,0 +1,7 @@
+<!-- gmapping.launch: launch stage with our navigation node -->
+<launch>
+<node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen">
+<remap from="scan" to="base_scan"/>
+</node>
+<node pkg="rviz" type="rviz" name="rviz" output="screen"/>
+</launch>
